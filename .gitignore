@@ -1,0 +1,3 @@
+#Useful for testing the tool in the same directory
+*.iso
+iso_extracted
