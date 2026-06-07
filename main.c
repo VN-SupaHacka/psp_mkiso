@@ -332,9 +332,7 @@ int main(int argc, char **argv)
     u32 path_tbl_size          = write_path_table(entries, entry_cnt, &sector_idx, iso);
     write_dir_headers(entries, entry_cnt, sector_idx, iso);
 
-    printf("%u\n", path_tbl_size);
-
-     struct iso_primary_vol_desc pvol = {
+    struct iso_primary_vol_desc pvol = {
         .type     = ISO_PRIMARY_VOL_TYPE,
         .std_id   = "CD001",
         .version  = 1,
